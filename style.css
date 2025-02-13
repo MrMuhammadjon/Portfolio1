@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+
+:root {
+    --white-colo-1: #FFFFFF;
+    --green-color-1: #B3E140;
+    --green-color-2: #75A304;
+    --black-color-1: black;
+    --gray-color-1: rgb(95, 95, 95);
+    --font-famyl-1: "Teko", serif;
+
+}
+
+.flex-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 180px;
+}
+
+.logo {
+    width: 160px;
+    min-width: 140px;
+    height: 180px;
+    border-radius: 0px 0px 100px 0px;
+    background-color: var(--green-color-1);
+}
+
+.logo h1 {
+    font-size: 50px;
+    font-weight: 700;
+    font-family: "Teko", serif;
+    line-height: 1;
+}
+
+.head-element {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 0px 20px;
+}
+
+.head-element ul {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+
+.head-element ul a {
+    text-decoration: none;
+    color: var(--black-color-1);
+    font-family: "Teko", serif;
+    border-bottom: 3px solid var(--gray-color-1);
+    border-radius: 1px;
+    font-size: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.head-element ul a::before {
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    content: "";
+    background-color: var(--green-color-1);
+    z-index: 2;
+    top: 99%;
+    transform: translateX(-100%);
+    transition: 0.3s ease;
+}
+
+.head-element ul a:hover:before {
+    transform: translateX(0%);
+}
+
+.head-btn {
+    padding: 0 50px;
+}
+
+.head-btn ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.head-btn ul .bx {
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    position: relative;
+}
+
+.head-btn ul .bx:hover {
+    color: var(--green-color-2);
+}
+
+.head-btn ul .bx:nth-child(1) {
+    color: var(--green-color-2);
+}
+
+.head-btn ul .bx span {
+    position: absolute;
+    padding: 2.5px 8px;
+    background-color: var(--green-color-2);
+    border-radius: 50%;
+    font-size: 20px;
+    text-align: center;
+    margin-left: -10px;
+    font-family: var(--font-famyl-1);
+}
+
+.head-btn ul .bx:hover span {
+    color: var(--black-color-1);
+}
+
+
+.home-main {
+    width: 100%;
+    max-width: 1400px;
+    height: 600px;
+    margin: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    text-align: end;
+    align-content: end;
+    padding: 0px 20px;
+}
+
+.home-text {
+    font-size: 90px;
+    font-family: var(--font-famyl-1);
+    line-height: 1;
+}
+
+.home-img {
+    position: absolute;
+    margin-top: -2%;
+    left: -8%;
+    z-index: 2;
+}
+
+.home-img img {
+    animation: customAni 5s ease 0.3s infinite normal none;
+
+}
+
+/* Copy this code after the above code */
+@keyframes customAni {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(10deg);
+        margin-top: -50px;
+    }
+
+
+}
+
+
+.home-order {
+    position: relative;
+    z-index: 5;
+}
+
+.home-order-btn {
+    padding: 20px 30px;
+    border: none;
+    background-color: var(--green-color-2);
+    cursor: pointer;
+    color: var(--black-color-1);
+    font-size: 25px;
+    font-weight: 800;
+    transition: 0.3s ease;
+}
+
+.home-order-btn:hover {
+    border-radius: 30px 0px 30px 0;
+    background-color: var(--green-color-1);
+}
+
+
+
+@media(max-width: 1200px) {}
+
+@media(max-width: 1026px) {
+    .head-element ul a {
+
+        font-size: 30px;
+
+    }
+}
+
+@media(max-width: 992px) {}
+
+@media(max-width: 768px) {}
+
+@media(max-width: 576px) {}
