@@ -441,8 +441,6 @@ section {
     #get-parallax-2 {
         width: 600px;
         margin: 20px;
-        margin-top: 100px;
-        top: 100px !important;
     }
 
     menu {
@@ -453,6 +451,7 @@ section {
 
     .home-main {
         flex-direction: column;
+        height: 400px;
     }
 
     .home-text h1{
@@ -460,15 +459,43 @@ section {
     }
     .home-order {
         position: relative;
-        z-index: 4;
+        z-index: 5;
     }
+    main{
+        z-index: 6;
+    }
+
 }
 
 @media(max-width: 600px) {
     #get-parallax-2 {
         width: 500px;
-        top: 100px !important;
+        z-index: 9;
     }
+    .home-main {
+        height: 200px;
+    }
+
 }
 
-@media(max-width: 576px) {}
+@media(max-width: 576px) {
+    .home-text h1 {
+        font-size: 60px;
+    }
+
+    .Right-Now-head h1 {
+        font-size: 100px;
+    }
+
+    .Right-Now-head h2 {
+        font-size: 50px;
+    }
+
+    #get-parallax-2 {
+        z-index: 9;
+    }
+
+    .home-main {
+        height: 100px;
+    }
+}
