@@ -521,3 +521,15 @@ section {
         height: 160px;
     }
 }
+
+@media(max-width: 500px) {
+    #get-parallax-2 {
+        width: 90%;
+    }
+    .text h1 {
+        font-size: 100px;
+    }
+    .discount{
+        font-size: 60px;
+    }
+}
