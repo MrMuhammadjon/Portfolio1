@@ -367,14 +367,14 @@ section {
 
 .player {
     position: absolute;
-    right: 15%;
-    bottom: 10%;
-    width: 200px;
+    right: 9%;
+    bottom: 1%;
+    width: 40%;
 }
 
 
 .Nike-logo {
-    transform: scale(1);
+    width: 50%;
 }
 
 
@@ -427,6 +427,12 @@ section {
     .home-text {
         font-size: 65px;
     }
+    .Right-Now-head h1{
+        font-size: 160px;
+    }
+    .Right-Now-head h2{
+        font-size: 120px;
+    }
 }
 
 @media(max-width: 768px) {
@@ -457,12 +463,21 @@ section {
     .home-text h1{
         font-size: 100px;
     }
+
     .home-order {
         position: relative;
         z-index: 5;
     }
+
     main{
         z-index: 6;
+    }
+
+    .Right-Now-head h1{
+        font-size: 130px;
+    }
+    .Right-Now-head h2{
+        font-size: 90px;
     }
 
 }
@@ -474,6 +489,12 @@ section {
     }
     .home-main {
         height: 200px;
+    }
+    .Right-Now-head h1{
+        font-size: 100px;
+    }
+    .Right-Now-head h2{
+        font-size: 60px;
     }
 
 }
@@ -492,10 +513,11 @@ section {
     }
 
     #get-parallax-2 {
-        z-index: 9;
+    
+        z-index: 9 !important;
     }
 
     .home-main {
-        height: 100px;
+        height: 160px;
     }
 }
