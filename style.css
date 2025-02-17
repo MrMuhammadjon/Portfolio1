@@ -267,7 +267,7 @@ section {
 }
 
 .right-cards {
-    width: 90%;
+    width: 100%;
     background: #C3EB5F;
     padding: 20px;
     border-radius: 38px;
@@ -531,5 +531,8 @@ section {
     }
     .discount{
         font-size: 60px;
+    }
+    .Right-Now-head h1 {
+        font-size: 70px;
     }
 }
