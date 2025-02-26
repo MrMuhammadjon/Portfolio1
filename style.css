@@ -377,9 +377,72 @@ section {
     width: 50%;
 }
 
+.reklam{
+    width: 90%;
+    height: auto;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+}
 
 
+.reaklam-head h1{
+    font-family: var(--font-famyl-1);
+    font-size: 80px;
+    text-align: center;
+}
 
+.reaklam-main p{
+    font-family: var(--font-famyl-1);
+    font-size: 80px;
+    text-align: center;
+    line-height: 1;
+}
+
+.reklam-btn{
+    width: 300px;
+    height: 70px;
+    background-color: var(--green-color-2);
+    font-family: var(--font-famyl-1);
+    font-size: 40px;
+    border: none;
+    transition: 0.3s ease;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    &:hover{
+        border-radius: 60px 0px 60px 0px;
+        cursor: pointer;
+        color: var(--white-colo-1);
+    }
+}
+
+
+.brands-class{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 100px 0px;
+}
+
+
+.brand-class-main{
+    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+    justify-content: space-between;
+    grid-template-columns: repeat(auto-fit, minmax(250px ,1f));
+}
+
+.brand-logo{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 @media(max-width: 1200px) {}
 
@@ -390,6 +453,9 @@ section {
 
     #get-parallax-2 {
         width: 800px;
+    }
+    .discount{
+         bottom: 30%;
     }
 }
 
@@ -480,6 +546,9 @@ section {
         font-size: 90px;
     }
 
+    .container{
+        flex-direction: column;
+    }
 }
 
 @media(max-width: 600px) {
